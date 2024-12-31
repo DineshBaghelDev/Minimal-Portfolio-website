@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1d0229;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+header {
+    display: flex;
+    background-color: #011042;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+
+.pages ul {
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+}
+
+header li a {
+    text-decoration: none;
+}
+
+header li a:hover {
+    color: rgb(14, 98, 172);
+}
+
+header li {
+    list-style: none;
+    margin: 0 max(1rem, 2.5vw);
+}
+
+.logo {
+    margin: 0 max(2rem, 3vw);
+}
+
+.logo h1 {
+    font-size: max(1.2rem, 2vw);
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 3px;
+    position: relative;
+    top: 0px;
+    right: 10px;
+    width: 40px;
+    align-items: center;
+    height: 30px;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.line {
+    border: 1px solid white;
+    width: 25px;
+    margin: 3px 0;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+}
+
+.coder {
+    width: 30vw;
+    margin: 2.5vmax 4vw;
+    position: absolute;
+    right: 5vw;
+    z-index: -1;
+}
+
+.intro {
+    font-size: max(1.3rem, 3.5vw);
+    font-weight: bolder;
+    margin: 10vw;
+}
+
+.intro span {
+    color: #8780d9;
+    font-size: max(1.2rem, 3.5vw)
+}
+
+#element {
+    color: orange;
+    font-family: "Jersey 20";
+    font-size: max(1.5rem, 5vw);
+    position: relative;
+}
+
+hr {
+    color: #6000c2;
+    width: 85%;
+    margin: auto;
+    justify-content: center;
+}
+
+.about p span {
+    color: skyblue;
+}
+
+.about div {
+    width: 80%;
+    margin: 2rem auto;
+    justify-content: center;
+}
+
+.about p {
+    margin: 1.5vw 0;
+    font-size: max(1em, 1.2vw);
+}
+
+.about h1 {
+    font-size: max(1.5em, 2.5vw);
+}
+
+.tech {
+    background-color: #090025;
+}
+
+.tech>div {
+    width: 80vw;
+    margin: 3vw auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.tech h1 {
+    font-size: max(1.5em, 3vw);
+    padding: max(0.7em, 2vw) 0;
+}
+
+.tools img {
+    width: 8vw;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 0;
+}
+
+.blog>div {
+    text-align: center;
+}
+
+.blog h1 {
+    font-size: max(1.5em, 3vw);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card * {
+    color: black;
+    padding: 0 15px;
+}
+.image {
+    height: 150px;
+    background-color: lightblue;
+    border-radius: 10px 10px 0 0;
+}
+.card h2 {
+    margin: 10px;
+}
+.read {
+    width: 50%;
+    height: 35px;
+    margin: 20px 0;
+    background-color: rgb(66, 66, 246);
+    border-radius: 10px;
+    color: white;
+    border: none;
+}
+.read:hover {
+    transform: scale(1.05);
+    background-color: white;
+    color: rgb(66, 66, 246);
+    border: 1px solid rgb(66, 66, 246);
+    transition: all 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+}
+footer{
+    background-color: black;
+    font-family: "Calibri";
+    font-size: 18px;
+    padding: 2vw 5vw;
+    margin-top: 3vw;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.left span{
+    color: #6200c6;
+}
+.name{
+    color: #6200c6;
+}
+.right{
+    /* width: 30vw; */
+    justify-content: center;
+}
+.right h3{
+    color: #001ebb;
+}
+.social img{
+    width: 25px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.social{
+    margin: 10px 0;
+}
+.bottom{
+    color: #6300c7;
+    text-align: center;
+    margin-top: 50px;
+}
+@media screen and (max-width:790px) {
+    .pages ul {
+        flex-direction: column;
+    }
+
+    .pages li {
+        margin: 1vh 7vw;
+    }
+
+    .pages {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.5);
+        padding-top: 10vw;
+        visibility: hidden;
+        width: 40vw;
+        visibility: hidden;
+        transition: all 0.6s ease;
+
+    }
+
+    .w-page {
+        right: -40vw;
+    }
+
+    .v-nav {
+        visibility: visible;
+    }
+    .tools img{
+        width: 12vw;
+    }
+    .footer{
+        display: block;
+    }
+    .right{
+    margin-top: 5vw;
+    }
+}
